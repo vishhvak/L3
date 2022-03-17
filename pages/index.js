@@ -60,7 +60,7 @@ const Movie = ({movie}) => {
 
 export default function Home() {
   const [movies, setMovies] = useState([]);
-  const {data} = useSWR('http://128.2.205.119:8082/recommend/231204', fetcher_text);
+  const {data} = useSWR('http://128.2.205.103:8082/recommend/231204', fetcher_text);
 
   const parsedData = useMemo(() => {
     if (!data) return;
